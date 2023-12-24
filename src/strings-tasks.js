@@ -496,7 +496,6 @@ function encodeToRot13(str) {
   let encoded = '';
   for (let i = 0; i < str.length; i += 1) {
     const index = input.indexOf(str[i]);
-    console.log(index);
     encoded += output[index];
   }
   return encoded.replaceAll('undefined', ' ');
